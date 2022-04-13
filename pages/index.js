@@ -1,6 +1,6 @@
-import Header from "./components/Header";
-import Mainlayout from "./components/MainLayout";
-import Section from './components/Section'
+import Header from "./Components/Header";
+import Mainlayout from "./Components/MainLayout";
+import Section from './Components/Section'
 export default function Home(){
   return(
    <div>
