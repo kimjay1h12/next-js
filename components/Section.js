@@ -41,18 +41,19 @@ function Section() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      {buider.map((cur) => (
+      {buider.map((cur ,index ) => (
         <Grid
           container
           alignItems="center"
           justifyContent="center"
           flexDirection="column"
+          key={index}
           style={{
             backgroundImage: `url('${cur.url}')`,
             backgroundSize: "cover",
           }}
         >
-          <Typography variant="h4" color="#f90" style={{fontWeight:"700",}} >{cur.title}</Typography>
+          <Typography variant="h4" color="#f90" style={{fontWeight:"700",}} key={index} >{cur.title}</Typography>
 
           <Button>Learn More</Button>
         </Grid>
