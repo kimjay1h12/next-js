@@ -17,6 +17,9 @@ export default function Home() {
           property="og:image"
           content="https://foodwest.vercel.app/img/cheese.jpg"
         />
+        <meta property="og:image:width" content="1200"/>
+
+<meta property="og:image:height" content="630"/>
         <meta
           property="og:description"
           content="You order, we do the rest for you"

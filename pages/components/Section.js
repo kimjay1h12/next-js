@@ -30,7 +30,7 @@ const useStyles = makeStyles({
       alignItems:'center',
       justifyContent:'center',
       flexDirection:'column',
-      width: "350px",
+      width: "300px",
       height: "250px",
       color: "#fff",
       fontSize: "30px",
@@ -38,7 +38,7 @@ const useStyles = makeStyles({
     },
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-around",
     flexDirection: "column",
     ["@media (min-width:1200px)"]: {
       flexDirection: "row",

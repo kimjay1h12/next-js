@@ -4,6 +4,12 @@ const img = "/img/background.jpg";
 const img2 = "/img/background2.jpg";
 const useStyles = makeStyles({
   root: {
+    '& .MuiButton-contained':{
+background:"#f90",
+color:"white",
+width:"150px"
+,height:"50px"
+    },
     "& 	.MuiGrid-container": {
       justifyContent: "center",
       alignItems: "center",
@@ -44,6 +50,7 @@ function Header() {
           Let <br />
           Get started
         </Typography>
+        <Button  variant="contained" >Shop now</Button>
       
       </Grid>
     </div>
