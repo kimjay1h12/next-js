@@ -1,24 +1,28 @@
 import { Typography } from "@mui/material";
 import Head from "next/head";
 import Toolbar from "../Toolbar";
-function Mainlayout() {
+function Mainlayout( ) {
   const title = "Foodwest"
+  const description = "we"
   return (
     <div>
-      <Head> 
-        
-       
-        <title> {title} | Foodwest</title>
-        <meta property="og:title" content={title} />
+           <Head>
+        <title>
+          Foodwest
+        </title>
+        <meta property="og:url" content="foodwest.vercel.app" />
+        <meta property="og:type" content="Foodwest" />
+        <meta property="fb:app_id" content="kimjay" />
+        <meta
+          property="og:title"
+          content="Social Media Preview Working?"
+        />
+        <meta name="twitter:card" content="summary" />
         <meta
           property="og:description"
-          content={
-            description ||
-            "welcome to the best food ordering website "
-          }
+          content="Hurray!! Yes Social Media Preview is Working"
         />
-    
-        <meta name="description" content="Developed by kimjay" />
+        <meta property="og:image" content={"/img/cheese.jpg"} />
       </Head>
       <Toolbar />
      
