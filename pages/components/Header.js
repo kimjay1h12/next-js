@@ -7,24 +7,29 @@ const useStyles = makeStyles({
     '& .MuiButton-contained':{
 background:"#f90",
 color:"white",
-width:"150px"
-,height:"50px"
+width:"200px",
+margin:'20px'
+,height:"50px",
+marginLeft:'0',
+marginTop:'20px'
+,
     },
     "& 	.MuiGrid-container": {
       justifyContent: "center",
-      alignItems: "center",
+      marginLeft: "20px",
+      flexDirection:'column',
       ["@media (min-width:1200px)"]: {
         justifyContent: "flex-start",
-        alignItems: "center",
+        marginLeft: "200px"
+       
       },
     },
     "& 	.MuiTypography-h4": {
-      fontSize: "60px",
+      fontSize: "50px",
       fontWeight: "700",
       textTransform: "uppercase",
       ["@media (min-width:1200px)"]: {
-        marginLeft: "200px",
-
+        
         fontSize: "60px",
         fontWeight: "700",
       },
@@ -34,8 +39,7 @@ width:"150px"
     },
     display: "flex",
     alignItems: "center",
-    flexDirection: "column",
-    justifyContent: "center",
+   
     backgroundImage: `url('${img2}')`,
     backgroundSize: "cover",
     height: "500px",
@@ -46,11 +50,14 @@ function Header() {
   return (
     <div className={classes.root}>
       <Grid container>
+        <Grid>
         <Typography variant="h4" color="#f90" className="" >
           Let <br />
           Get started
-        </Typography>
+        </Typography></Grid>
+        <Grid>
         <Button  variant="contained" >Shop now</Button>
+        </Grid>
       
       </Grid>
     </div>

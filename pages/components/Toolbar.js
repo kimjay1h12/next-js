@@ -115,6 +115,7 @@ function Navbar() {
           <a href="">Services</a>
           <a href="">Pages</a>
           <a href="">Blogs</a>
+          
         </nav>
       </ul>
     </div>
