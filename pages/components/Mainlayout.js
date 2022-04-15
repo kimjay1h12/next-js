@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import Head from "next/head";
-import Toolbar from "../Toolbar";
+import Toolbar from "./Toolbar";
 function Mainlayout( ) {
   const title = "Foodwest"
   const description = "we"
