@@ -11,17 +11,18 @@ function Mainlayout( ) {
         </title>
         <meta property="og:url" content="foodwest.vercel.app" />
         <meta property="og:type" content="Foodwest" />
-        <meta property="fb:app_id" content="kimjay" />
+        <meta property="fb:app_id" content="Foodwest" />
         <meta
           property="og:title"
-          content="Welcom to Foodwest"
+          content="Welcome to Foodwest"
           
         />
         <meta name="twitter:card" content="summary" />
         <meta
           property="og:description"
-          content="Hurray!! Yes Social Media Preview is Working"
+          content="Welcome to Foodwest"
         />
+         <link rel="shortcut icon" href="/img/pizza.jpg"/>
         <meta property="og:image" content="/img/cheese.jpg" />
       </Head>
     
