@@ -17,9 +17,8 @@ const buider = [
 const useStyles = makeStyles({
   root: {
     "& .MuiButton-contained ": {
-      alignItems: "center",
-      justifyContent: "center",
-      flexDirection: "column",
+  
+      
       background: "red",
       color: "#f90",
       width:"150px",
@@ -35,7 +34,7 @@ const useStyles = makeStyles({
       height: "250px",
       color: "#fff",
       fontSize: "30px",
-      margin: "10px",
+      marginLeft: "10px",
     },
     display: "flex",
     alignItems: "center",
