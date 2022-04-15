@@ -41,7 +41,7 @@ function Header() {
     <div className={classes.root}>
       <Grid container>
         <Typography variant="h4" color="#f90">
-          Let&aposs <br />
+          Let <br />
           Get started
         </Typography>
       
