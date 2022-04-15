@@ -24,7 +24,7 @@ const useStyles = makeStyles({
       color: "#f90",
       marginTop: "20px",
     },
-    "& .css-18dt0nf-MuiGrid-root": {
+    "& .MuiTypography-h4": {
       width: "350px",
       height: "250px",
       color: "#fff",
