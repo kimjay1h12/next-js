@@ -14,14 +14,15 @@ function Mainlayout( ) {
         <meta property="fb:app_id" content="kimjay" />
         <meta
           property="og:title"
-          content="Social Media Preview Working?"
+          content="Welcom to Foodwest"
+          
         />
         <meta name="twitter:card" content="summary" />
         <meta
           property="og:description"
           content="Hurray!! Yes Social Media Preview is Working"
         />
-        <meta property="og:image" content={"/img/cheese.jpg"} />
+        <meta property="og:image" content="/img/cheese.jpg" />
       </Head>
     
       <Toolbar />
