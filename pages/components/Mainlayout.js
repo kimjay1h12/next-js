@@ -2,8 +2,7 @@ import { Typography } from "@mui/material";
 import Head from "next/head";
 import Toolbar from "./Toolbar";
 function Mainlayout( ) {
-  const title = "Foodwest"
-  const description = "we"
+  
   return (
     <div>
            <Head>
@@ -24,6 +23,7 @@ function Mainlayout( ) {
         />
         <meta property="og:image" content={"/img/cheese.jpg"} />
       </Head>
+    
       <Toolbar />
      
     </div>
