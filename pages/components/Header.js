@@ -4,7 +4,7 @@ const img = "/img/background.jpg";
 const img2 = "/img/background2.jpg";
 const useStyles = makeStyles({
   root: {
-    "& .css-11lq3yg-MuiGrid-root": {
+    "& 	.MuiGrid-container": {
       justifyContent: "center",
       alignItems: "center",
       ["@media (min-width:1200px)"]: {
@@ -12,7 +12,7 @@ const useStyles = makeStyles({
         alignItems: "center",
       },
     },
-    "& .css-1kca3mp-MuiTypography-root": {
+    "& 	.MuiTypography-h4": {
       fontSize: "60px",
       fontWeight: "700",
       textTransform: "uppercase",
@@ -40,7 +40,7 @@ function Header() {
   return (
     <div className={classes.root}>
       <Grid container>
-        <Typography variant="h4" color="#f90">
+        <Typography variant="h4" color="#f90" className="" >
           Let <br />
           Get started
         </Typography>
