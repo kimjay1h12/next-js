@@ -16,18 +16,21 @@ const buider = [
 ];
 const useStyles = makeStyles({
   root: {
-    "& .MuiGrid-container ": {
+    "& .MuiButton-contained ": {
       alignItems: "center",
       justifyContent: "center",
       flexDirection: "column",
       background: "red",
       color: "#f90",
+      width:"150px",
+      height:'50px',
       marginTop: "20px",
     },
     "& .MuiTypography-h4": {
       display:"flex",
       alignItems:'center',
       justifyContent:'center',
+      flexDirection:'column',
       width: "350px",
       height: "250px",
       color: "#fff",
@@ -65,7 +68,7 @@ function Section() {
             {cur.title}
           </Typography>
 
-          <Button>Learn More</Button>
+          <Button  variant="contained" >Learn More </Button>
         </Grid>
       ))}
     </div>

@@ -1,17 +1,31 @@
 import Header from "./components/Header";
 import Mainlayout from "./components/Mainlayout";
-import Section from './components/Section'
-
+import Section from "./components/Section";
+import Head from "next/head";
 import CssBaseline from "@mui/material/CssBaseline";
-export default function Home(){
-  return(
-   <div>
-        
-     <Mainlayout/>
-<Header/>
-<Section/>
+export default function Home() {
+  return (
+    <div>
+      <Head>
+        <title>Foodwest</title>
+        <meta property="og:url" content="foodwest.vercel.app" />
+        <meta property="og:type" content="Foodwest" />
+        <meta property="fb:app_id" content="Foodwest" />
+        <meta property="og:title" content="Welcome to Foodwest" />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          property="og:image"
+          content="https://foodwest.vercel.app/img/cheese.jpg"
+        />
+        <meta
+          property="og:description"
+          content="You order, we do the rest for you"
+        />
+       
+      </Head>
+      <Mainlayout />
+      <Header />
+      <Section />
     </div>
-    
-
-  )
+  );
 }
