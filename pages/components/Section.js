@@ -25,6 +25,9 @@ const useStyles = makeStyles({
       marginTop: "20px",
     },
     "& .MuiTypography-h4": {
+      display:"flex",
+      alignItems:'center',
+      justifyContent:'center',
       width: "350px",
       height: "250px",
       color: "#fff",
