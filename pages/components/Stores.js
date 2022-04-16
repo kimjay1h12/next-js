@@ -40,30 +40,47 @@ const useStyles = makeStyles({
     },
   },
 });
+
 const content = [
   {
     url: "/img/cheese.jpg",
     title: "Cheese & Barbeque Chicken",
     price: "$80.00",
     button: "ADD TO CART",
+    click : function Click(){
+      alert("you clicked on img1")
+    
+    }
   },
   {
     url: "/img/img1.jpg",
     title: "Cheese & Barbeque Chicken",
     price: "$80.00",
     button: "ADD TO CART",
+    click : function Click(){
+        alert("you clicked on img2")
+      
+      }
   },
   {
     url: "/img/img3.jpg",
     title: "Cheese & Barbeque Chicken",
     price: "$80.00",
     button: "ADD TO CART",
+    click : function Click(){
+        alert("you clicked on img3")
+      
+      }
   },
   {
     url: "/img/img4.jpg",
     title: "Cheese & Barbeque Chicken",
     price: "$80.00",
     button: "ADD TO CART",
+    click : function Click(){
+        alert("you clicked on img4")
+      
+      }
   },
 ];
 function Stores() {
@@ -75,7 +92,7 @@ function Stores() {
           <img src={cur.url} />
           <Typography variant="h6">{cur.title}</Typography>
           <Typography>{cur.price}</Typography>
-          <Button variant="outlined">{cur.button}</Button>
+          <Button variant="outlined"  onClick={cur.click} >{cur.button}</Button>
         </Grid>
       ))}
     </div>
