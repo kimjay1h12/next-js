@@ -12,9 +12,14 @@ const useStyles = makeStyles({
       width: "300px",
       height: "300px",
       ["@media (min-width:1200px)"]: {
-        width: "380px",
+        width: "300px",
         height: "500px",
       },
+    },
+    '& 	.MuiButton-outlined':{
+background:"#f90",
+color :"white",
+marginTop:"10px"
     },
     "& img": {
       width: "200px",
@@ -68,10 +73,11 @@ function Stores() {
     <div className={classes.root}>
       {content.map((cur, index) => (
         <Grid container key={index} >
-          <img src={cur.url} key={index} />
-          <Typography variant="h6" key={index} >{cur.title}</Typography>
-          <Typography key={index} >{cur.price}</Typography>
-          <Button key={index} >{cur.button}</Button>
+            
+          <img  src={cur.url}  />
+          <Typography variant="h6"  >{cur.title}</Typography>
+          <Typography >{cur.price}</Typography>
+          <Button variant="outlined" >{cur.button}</Button>
         </Grid>
       ))}
     </div>
