@@ -1,7 +1,20 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import { Wrapper, Status } from "@googlemaps/react-wrapper";
+
+
+
 const useStyles = makeStyles({
-  root: {
+    root:{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        ["@media (min-width:1200px)"]: {
+          flexDirection: "column",
+        },
+    },
+  section: {
     "& .MuiGrid-container": {
       display: "flex",
       justifyContent: "center",
@@ -54,8 +67,8 @@ const content = [
   },
   {
     url: "/img/img1.jpg",
-    title: "Cheese & Barbeque Chicken",
-    price: "$80.00",
+    title: "5 Pepper",
+    price: "$20.00",
     button: "ADD TO CART",
     click : function Click(){
         alert("you clicked on img2")
@@ -64,8 +77,8 @@ const content = [
   },
   {
     url: "/img/img3.jpg",
-    title: "Cheese & Barbeque Chicken",
-    price: "$80.00",
+    title: "Chicken Nugget",
+    price: "$10.00",
     button: "ADD TO CART",
     click : function Click(){
         alert("you clicked on img3")
@@ -74,7 +87,7 @@ const content = [
   },
   {
     url: "/img/img4.jpg",
-    title: "Cheese & Barbeque Chicken",
+    title: "California Roll",
     price: "$80.00",
     button: "ADD TO CART",
     click : function Click(){
@@ -83,18 +96,77 @@ const content = [
       }
   },
 ];
+const content2 = [
+    {
+      url: "/img/img5.jpg",
+      title: "HandBurger",
+      price: "$80.00",
+      button: "ADD TO CART",
+      click : function Click(){
+        alert("you clicked on img1")
+      
+      }
+    },
+    {
+      url: "/img/img6.jpg",
+      title: "Kebeb",
+      price: "$80.00",
+      button: "ADD TO CART",
+      click : function Click(){
+          alert("you clicked on img2")
+        
+        }
+    },
+    {
+      url: "/img/img7.jpg",
+      title: "HotDog",
+      price: "$80.00",
+      button: "ADD TO CART",
+      click : function Click(){
+          alert("you clicked on img3")
+        
+        }
+    },
+    {
+      url: "/img/img8.jpg",
+      title: "Burger Builder",
+      price: "$70.00",
+      button: "ADD TO CART",
+      click : function Click(){
+          alert("you clicked on img4")
+        
+        }
+    },
+  ];
 function Stores() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
+        <div className={classes.section}>
       {content.map((cur, index) => (
         <Grid container key={index}>
           <img src={cur.url} />
-          <Typography variant="h6">{cur.title}</Typography>
-          <Typography>{cur.price}</Typography>
+          <Typography variant="h6" style={{color:'#f90'}}>{cur.title}</Typography>
+
+          <Typography style={{color:'#f90'}}>{cur.price}</Typography>
           <Button variant="outlined"  onClick={cur.click} >{cur.button}</Button>
         </Grid>
       ))}
+      </div>
+      <div className={classes.section}>
+      {content2.map((cur, index) => (
+        <Grid container key={index}>
+          <img src={cur.url} />
+          <Typography variant="h6"style={{color:'#f90'}} >{cur.title}</Typography>
+
+          <Typography style={{color:'#f90'}} >{cur.price}</Typography>
+          <Button variant="outlined"  onClick={cur.click} >{cur.button}</Button>
+        </Grid>
+      ))}
+      </div>
+    
+ 
+
     </div>
   );
 }

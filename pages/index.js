@@ -4,6 +4,7 @@ import Section from "./components/Section";
 import Head from "next/head";
 import Stores from "./components/Stores";
 import CssBaseline from "@mui/material/CssBaseline";
+import Timer from "./components/Timer";
 export default function Home() {
   return (
     <div>
@@ -31,6 +32,7 @@ export default function Home() {
       <Header />
       <Section />
       <Stores/>
+      <Timer/>
     </div>
   );
 }
