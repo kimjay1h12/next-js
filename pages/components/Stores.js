@@ -7,19 +7,18 @@ const useStyles = makeStyles({
       justifyContent: "center",
       textAlign: "center",
       alignItems: "flex-start",
-
       flexDirection: "column",
       width: "300px",
-      height: "300px",
+      height: "400px",
       ["@media (min-width:1200px)"]: {
         width: "300px",
         height: "500px",
       },
     },
-    '& 	.MuiButton-outlined':{
-background:"#f90",
-color :"white",
-marginTop:"10px"
+    "& 	.MuiButton-outlined": {
+      background: "#f90",
+      color: "white",
+      marginTop: "10px",
     },
     "& img": {
       width: "200px",
@@ -72,12 +71,11 @@ function Stores() {
   return (
     <div className={classes.root}>
       {content.map((cur, index) => (
-        <Grid container key={index} >
-            
-          <img  src={cur.url}  />
-          <Typography variant="h6"  >{cur.title}</Typography>
-          <Typography >{cur.price}</Typography>
-          <Button variant="outlined" >{cur.button}</Button>
+        <Grid container key={index}>
+          <img src={cur.url} />
+          <Typography variant="h6">{cur.title}</Typography>
+          <Typography>{cur.price}</Typography>
+          <Button variant="outlined">{cur.button}</Button>
         </Grid>
       ))}
     </div>
