@@ -7,7 +7,7 @@ const buider = [
   },
   {
     title: "WE DELIVERY",
-    url: "/img/step2.webp",
+    url: "/img/step2.jpg",
   },
   {
     title: "YOU ENJOY !!",
@@ -28,18 +28,27 @@ const useStyles = makeStyles({
       alignItems: "center",
       justifyContent: "center",
       flexDirection: "column",
-      width: "100%",
-      height: "290px",
+      width: "350px",
+      height: "300px",
       color: "#fff",
       fontSize: "30px",
-      margin: "8px",
+      marginTop: "10px",
+      marginLeft:'100px'
+      ,marginRight:'100px',
+      ["@media (min-width:1200px)"]: {
+        marginLeft:'50px',
+        width: "500px",
+        marginTop: "50px",
+        marginRight:'50px',
+      
+      },
     },
     display: "flex",
     alignItems: "center",
-
+justifyContent:'space-around',
     flexDirection: "column",
     ["@media (min-width:1200px)"]: {
-      justifyContent: "space-around",
+     
       flexDirection: "row",
     },
   },
