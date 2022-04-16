@@ -13,8 +13,8 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
-          <meta property="og:image" content="https://foodwest.vercel.app/img/cheese.jpg" />
-          <link rel="shortcut icon" href="https://foodwest.vercel.app/img/cheese.jpg" />
+          <meta property="og:image" content="https://foodwest.vercel.app/img/logo.png" />
+          <link rel="shortcut icon" href="https://foodwest.vercel.app/img/logo.png" />
           <meta
             name="google-site-verification"
             content="LnYh0UQt4hnAaDsFGORlZ9p50zKahbAMOJD9cKGCIGQ"

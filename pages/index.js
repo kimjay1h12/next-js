@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary" />
         <meta
           property="og:image"
-          content="https://foodwest.vercel.app/img/cheese.jpg"
+          content="https://foodwest.vercel.app/img/logo.png"
         />
         <meta property="og:image:width" content="1200"/>
 
