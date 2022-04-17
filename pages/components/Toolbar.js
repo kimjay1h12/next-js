@@ -123,7 +123,7 @@ function Navbar() {
           <a href="">Offers</a>
           <a href="">Blogs</a>
          <a href=""> <LocalGroceryStoreIcon/></a>
-         <a href="/user/Profile"><PersonIcon/>*</a>
+         <Link href="/user/Profile"><a><PersonIcon/>*</a></Link>
           
         </nav>
       </ul>
@@ -152,13 +152,16 @@ function Navbar() {
 
         <Hidden mdDown>
           <ul>
+          <nav>
           <a href="">Home</a>
           <a href="">Categories</a>
           <a href="">Tracking</a>
           <a href="">Offers</a>
           <a href="">Blogs</a>
-         <a href=""> <LocalGroceryStoreIcon/>0</a>
-         <a href="/user/Profile"><PersonIcon/></a>
+         <a href=""> <LocalGroceryStoreIcon/></a>
+         <Link href="/user/Profile"><a><PersonIcon/>*</a></Link>
+          
+        </nav>
           
           </ul>
         </Hidden>
