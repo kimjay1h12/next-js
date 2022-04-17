@@ -4,7 +4,11 @@ import Section from "./components/Section";
 import Head from "next/head";
 import Stores from "./components/Stores";
 import CssBaseline from "@mui/material/CssBaseline";
+
 import Timer from "./components/Timer";
+import Message from "./components/Message";
+import Map from "./components/Location";
+import Location from "./components/Location";
 export default function Home() {
   return (
     <div>
@@ -33,6 +37,9 @@ export default function Home() {
       <Section />
       <Stores/>
       <Timer/>
+      <Message/>
+      <Location/>
+   
     </div>
   );
 }

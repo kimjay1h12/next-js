@@ -32,6 +32,7 @@ justifyContent:"space-around"
           justifyContent:"center",
           backgroundImage: `url('${background}')`,
           backgroundSize: "cover",
+          marginTop:"100px"
       }
   })
 function Timer() {
