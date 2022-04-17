@@ -9,6 +9,7 @@ import Timer from "./components/Timer";
 import Message from "./components/Message";
 import Map from "./components/Location";
 import Location from "./components/Location";
+import End from "./components/End";
 export default function Home() {
   return (
     <div>
@@ -39,6 +40,7 @@ export default function Home() {
       <Timer/>
       <Message/>
       <Location/>
+      <End/>
    
     </div>
   );

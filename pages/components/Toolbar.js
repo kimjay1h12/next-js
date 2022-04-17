@@ -5,6 +5,7 @@ import {
   IconButton,
   Grow,
   Toolbar,
+  Typography,
 } from "@mui/material";
 import { CloseOutlined, Menu } from "@mui/icons-material";
 import { makeStyles } from "@mui/styles";
@@ -109,11 +110,15 @@ function Navbar() {
 
   const Drawer = (
     <div className={classes.drawer}>
+      <Typography variant="h4" color="#f90" sx={{fontWeight:'700'}} >
+        Foodwest
+      </Typography>
       <ul>
         <nav>
           <a href="">Home</a>
-          <a href="">Services</a>
-          <a href="">Pages</a>
+          <a href="">Categories</a>
+          <a href="">Tracking</a>
+          <a href="">Offers</a>
           <a href="">Blogs</a>
           
         </nav>
@@ -143,10 +148,11 @@ function Navbar() {
 
         <Hidden mdDown>
           <ul>
-            <a href="">Home</a>
-            <a href="">Services</a>
-            <a href="">Pages</a>
-            <a href="">Blogs</a>
+          <a href="">Home</a>
+          <a href="">Categories</a>
+          <a href="">Tracking</a>
+          <a href="">Offers</a>
+          <a href="">Blogs</a>
           </ul>
         </Hidden>
       </Toolbar>

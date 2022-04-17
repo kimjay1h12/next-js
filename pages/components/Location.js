@@ -6,7 +6,7 @@ const locate = () =>{
 const useStyles = makeStyles({
   root:{
     '& img':{
-      width:"400px",
+      width:"100%",
       height:"300px",
       ["@media (min-width:1200px)"]: {
         width:"100%",
@@ -21,6 +21,7 @@ function Location() {
    
     <div className={classes.root} >
         <img src="/img/map.jpg" onClick={locate} />
+        
     </div>
   )
 }
