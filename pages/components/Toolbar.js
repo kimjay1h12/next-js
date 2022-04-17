@@ -7,6 +7,8 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
+import PersonIcon from '@mui/icons-material/Person';
+import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import { CloseOutlined, Menu } from "@mui/icons-material";
 import { makeStyles } from "@mui/styles";
 import React, { useState } from "react";
@@ -120,6 +122,8 @@ function Navbar() {
           <a href="">Tracking</a>
           <a href="">Offers</a>
           <a href="">Blogs</a>
+         <a href=""> <LocalGroceryStoreIcon/></a>
+         <a href="/user/Profile"><PersonIcon/>*</a>
           
         </nav>
       </ul>
@@ -153,6 +157,9 @@ function Navbar() {
           <a href="">Tracking</a>
           <a href="">Offers</a>
           <a href="">Blogs</a>
+         <a href=""> <LocalGroceryStoreIcon/>0</a>
+         <a href="/user/Profile"><PersonIcon/></a>
+          
           </ul>
         </Hidden>
       </Toolbar>

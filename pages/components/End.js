@@ -62,6 +62,7 @@ const useStyles = makeStyles({
 function End() {
     const classes = useStyles()
   return (
+      <div>
     <div className={classes.root} >
         {content.map((cur, index )=>(
             <Grid container
@@ -91,7 +92,17 @@ function End() {
 </Typography>
             </Grid>
         ))}
-        
+  
+    </div>
+    <Grid
+     container
+     alignItems="center"
+     justifyContent="center"
+     color="white"
+     sx={{background:"#f90",height:"80px"}}
+     >
+         <Typography variant="h6" >Foodwest</Typography>
+         </Grid>  
     </div>
   )
 }
