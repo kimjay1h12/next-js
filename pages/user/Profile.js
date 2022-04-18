@@ -62,7 +62,7 @@ const classes = useStyles()
         <input type="email" placeholder="Email"/>
         <input type="email" placeholder="Password"/>
         <Button variant="outlined">Sign in</Button>
-        <Typography>No account <ArrowDownwardIcon color="#f90" /> </Typography>
+        <Typography>or </Typography>
       
         <Button variant="outlined">Sign up</Button>
     </Grid>
