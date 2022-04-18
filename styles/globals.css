@@ -14,3 +14,27 @@ a {
 * {
   box-sizing: border-box;
 }
+#header{
+
+
+background-size: 100% 100%;
+animation: mymove 15s infinite;
+transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+
+}
+@keyframes mymove {
+  from{
+background: url("/img/slide2.jpg");
+background-size: 100% 100%;
+  }
+  50%{
+    background: url("/img/background.jpg");
+    background-size: 100% 100%;
+  }
+  to{
+   
+    background: url("/img/slide3.jpg");
+    background-size: 100% 100%;
+  }
+
+}

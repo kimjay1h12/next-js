@@ -10,6 +10,9 @@ import Message from "./components/Message";
 import Map from "./components/Location";
 import Location from "./components/Location";
 import End from "./components/End";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
+
 export default function Home() {
   return (
     <div>
@@ -34,13 +37,28 @@ export default function Home() {
        
       </Head>
       <Mainlayout />
+      <AnimationOnScroll animateIn="animate__bounceIn">
       <Header />
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__bounceIn">
       <Section />
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__bounceIn">
       <Stores/>
+      
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__bounceIn">
       <Timer/>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__bounceIn">
       <Message/>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__bounceIn">
       <Location/>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__bounceIn">
       <End/>
+      </AnimationOnScroll>
    
     </div>
   );

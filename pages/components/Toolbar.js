@@ -106,6 +106,7 @@ const useStyles = makeStyles({
 });
 
 function Navbar() {
+  const profile = "/user/Profile"
   const classes = useStyles();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -123,7 +124,9 @@ function Navbar() {
           <a href="">Offers</a>
           <a href="">Blogs</a>
          <a href=""> <LocalGroceryStoreIcon/></a>
-         <Link href="/user/Profile"><a><PersonIcon/>*</a></Link>
+         <Link href={profile}><a>< PersonIcon/></a></Link>
+        
+       
           
         </nav>
       </ul>
@@ -152,16 +155,15 @@ function Navbar() {
 
         <Hidden mdDown>
           <ul>
-          <nav>
           <a href="">Home</a>
           <a href="">Categories</a>
           <a href="">Tracking</a>
           <a href="">Offers</a>
           <a href="">Blogs</a>
          <a href=""> <LocalGroceryStoreIcon/></a>
-         <Link href="/user/Profile"><a><PersonIcon/>*</a></Link>
-          
-        </nav>
+         <Link href={profile}><a>< PersonIcon/></a></Link>
+       
+       
           
           </ul>
         </Hidden>

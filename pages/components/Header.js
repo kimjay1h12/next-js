@@ -48,8 +48,8 @@ marginTop:'20px'
 function Header() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <Grid container>
+    <div className={classes.root}id="header" >
+      <Grid container  >
         <Grid>
         <Typography variant="h4" color="#f90" className="" >
           Let <br />

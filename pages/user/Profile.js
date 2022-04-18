@@ -1,7 +1,10 @@
 import { Typography,Grid,Button } from "@mui/material"
 import { makeStyles } from "@mui/styles"
 import End from "../components/End"
-import Mainlayout from "../components/Mainlayout"
+import Mainlayout from "../components/Mainlayout";
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
 
 const useStyles = makeStyles({
 root:{
@@ -22,18 +25,28 @@ root:{
     marginTop: "7px",
   },
   '& input':{
-    width:"400px",
+    width:"300px",
     height:"40px",
-marginTop:"7px"
+marginTop:"7px",
+['@media (min-width:1200px)']:{
+  width:"400px",
+  height:"40px",
+},
   },
-  marginTop:"300px"
+  marginTop:"210px",
+  ['@media (min-width:1200px)']:{
+    marginTop:"300px",
+  },
 }
 })
 function Profile() {
 const classes = useStyles()
   return (
     <div className={classes.root} >
+
         <Mainlayout/>
+       
+        <AnimationOnScroll animateIn="animate__bounceIn">
 <Grid container 
 
 
@@ -48,11 +61,15 @@ const classes = useStyles()
     >
         <input type="email" placeholder="Email"/>
         <input type="email" placeholder="Password"/>
-        <Button variant="outlined">Send</Button>
+        <Button variant="outlined">Sign in</Button>
+        <Typography>No account <ArrowDownwardIcon color="#f90" /> </Typography>
+      
+        <Button variant="outlined">Sign up</Button>
     </Grid>
 
 </Grid>
         <End/>
+        </AnimationOnScroll>
     </div>
   )
 }
