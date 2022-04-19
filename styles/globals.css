@@ -25,16 +25,16 @@ transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
 @keyframes mymove {
   from{
 background: url("/img/slide2.jpg");
-background-size: 100% 100%;
+background-size: cover;
   }
   50%{
     background: url("/img/background.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
   }
   to{
    
     background: url("/img/slide3.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
   }
 
 }
