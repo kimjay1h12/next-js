@@ -7,8 +7,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 import Timer from "./components/Timer";
 import Message from "./components/Message";
-import Map from "./components/Location";
-import Location from "./components/Location";
+
+import Download from "./components/Download";
 import End from "./components/End";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
@@ -54,7 +54,7 @@ export default function Home() {
       <Message/>
       </AnimationOnScroll>
       <AnimationOnScroll animateIn="animate__bounceIn">
-      <Location/>
+      <Download/>
       </AnimationOnScroll>
       <AnimationOnScroll animateIn="animate__bounceIn">
       <End/>
