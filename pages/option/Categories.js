@@ -12,7 +12,7 @@ const useStyles = makeStyles({
       marginTop: "20px",
     },
     "& img": {
-      height: "100%",
+      height: "200px",
       display: "block",
       marginLeft: "auto",
       marginRight: "auto",
@@ -33,7 +33,7 @@ const useStyles = makeStyles({
       marginTop: "20px",
     },
     "& img": {
-      height: "100%",
+      height: "200px",
       display: "block",
       marginLeft: "auto",
       marginRight: "auto",
@@ -47,6 +47,7 @@ const useStyles = makeStyles({
     ["@media (min-width:1200px)"]: {
       flexDirection: "row",
       marginTop: "250px",
+      
     },
   },
 });
