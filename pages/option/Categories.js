@@ -11,6 +11,12 @@ const useStyles = makeStyles({
     "& .MuiCard-root": {
       marginTop: "20px",
     },
+    "& img": {
+      height: "100%",
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto",
+    },
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",
@@ -22,27 +28,63 @@ const useStyles = makeStyles({
       marginTop: "250px",
     },
   },
+  root2: {
+    "& .MuiCard-root": {
+      marginTop: "20px",
+    },
+    "& img": {
+      height: "100%",
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto",
+    },
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    alignItems: "center",
+    marginTop: "10px",
+
+    ["@media (min-width:1200px)"]: {
+      flexDirection: "row",
+      marginTop: "250px",
+    },
+  },
 });
+
 const categories = [
   {
-    url: "/img/img1.jpg",
-    title: "localDishes",
-    button: "view",
+    url: "/img/drinks.webp",
+    title: "Drinks",
+  },
+  {
+    url: "/img/bread.jpg",
+    title: "Bread & Bakery",
+  },
+  {
+    url: "/img/cereal.jpg",
+    title: "Cereal",
+  },
+  {
+    url: "/img/swallow.jpg",
+    title: "swallow food",
+  },
+];
+const categories2 = [
+  {
+    url: "/img/snacks.jpg",
+    title: "Snacks",
+  },
+  {
+    url: "/img/bread.jpg",
+    title: "Bread & Bakery",
   },
   {
     url: "/img/img1.jpg",
     title: "localDishes",
-    button: "view",
   },
   {
     url: "/img/img1.jpg",
     title: "localDishes",
-    button: "view",
-  },
-  {
-    url: "/img/img1.jpg",
-    title: "localDishes",
-    button: "view",
   },
 ];
 export default function Categories() {
@@ -70,18 +112,17 @@ export default function Categories() {
                 gutterBottom
                 variant="h5"
                 color="#f90"
+                sx={{ fontWeight: "700" }}
                 component="div"
               >
                 {cur.title}
               </Typography>
-
-              <Button>{cur.button}</Button>
             </Grid>
           </Card>
         ))}
       </div>
-      <div className={classes.root}>
-        {categories.map((cur, index) => (
+      <div className={classes.root2}>
+        {categories2.map((cur, index) => (
           <Card sx={{ width: "300px" }} key={index}>
             <CardMedia
               component="img"
@@ -104,8 +145,6 @@ export default function Categories() {
               >
                 {cur.title}
               </Typography>
-
-              <Button>{cur.button}</Button>
             </Grid>
           </Card>
         ))}

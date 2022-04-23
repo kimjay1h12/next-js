@@ -62,7 +62,11 @@ function Location() {
           <Typography variant="h3" color="#fff" sx={{ fontWeight: "700" }}>
             Order Food
           </Typography>
-          <Typography color="#fff" variant="h6" sx={{ fontWeight: "600",fontSize:"15px",marginTop:"10px" }}>
+          <Typography
+            color="#fff"
+            variant="h6"
+            sx={{ fontWeight: "600", fontSize: "15px", marginTop: "10px" }}
+          >
             The Food west app makes it simple and stressfree for anybody to use
             a mobile device to look over the menu of the best vendors and place
             an order for home delivery.
