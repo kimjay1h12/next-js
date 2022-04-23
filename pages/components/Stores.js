@@ -2,8 +2,6 @@ import { Button, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import { useState } from "react";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
-import "animate.css/animate.min.css";
 
 
 const useStyles = makeStyles({
@@ -144,9 +142,7 @@ const content2 = [
 function Stores() {
   const classes = useStyles();
   return (
-    
     <div className={classes.root}>
-      <AnimationOnScroll animateIn="animate__bounceIn">
         <div className={classes.section}>
       {content.map((cur, index) => (
         <Grid container key={index}>
@@ -158,8 +154,6 @@ function Stores() {
         </Grid>
       ))}
       </div>
-      </AnimationOnScroll>
-      <AnimationOnScroll animateIn="animate__bounceIn">
       <div className={classes.section}>
       {content2.map((cur, index) => (
         <Grid container key={index}>
@@ -171,7 +165,7 @@ function Stores() {
         </Grid>
       ))}
       </div>
-      </AnimationOnScroll>
+    
  
 
     </div>

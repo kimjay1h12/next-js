@@ -6,7 +6,7 @@ const buider = [
     url: "/img/step1.jpg",
   },
   {
-    title: "WE DELIVERY",
+    title: "WE DELIVER",
     url: "/img/step2.jpg",
   },
   {

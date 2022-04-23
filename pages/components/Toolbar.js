@@ -7,8 +7,8 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import PersonIcon from '@mui/icons-material/Person';
-import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
+import PersonIcon from "@mui/icons-material/Person";
+import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import { CloseOutlined, Menu } from "@mui/icons-material";
 import { makeStyles } from "@mui/styles";
 import React, { useState } from "react";
@@ -106,30 +106,42 @@ const useStyles = makeStyles({
 });
 
 function Navbar() {
-  const profile = "/user/Profile"
-  const home = '/'
-  const cart = '/collector/Cart'
+  const profile = "/user/Profile";
+  const home = "/";
+  const cart = "/collector/Cart";
+  const Categories = "/option/Categories";
   const classes = useStyles();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const Drawer = (
     <div className={classes.drawer}>
-      <Typography variant="h4" color="#f90" sx={{fontWeight:'700'}} >
+      <Typography variant="h4" color="#f90" sx={{ fontWeight: "700" }}>
         Foodwest
       </Typography>
       <ul>
         <nav>
-          <Link href={home}><a>Home</a></Link>
-          <a href="">Categories</a>
+          <Link href={home}>
+            <a>Home</a>
+          </Link>
+          <Link href={Categories}>
+            <a>Categories</a>
+          </Link>
+
           <a href="">Tracking</a>
           <a href="">Offers</a>
           <a href="">Blogs</a>
-          <Link href={cart}><a> <LocalGroceryStoreIcon/></a></Link>
-         <Link href={profile}><a>< PersonIcon/></a></Link>
-        
-       
-          
+          <Link href={cart}>
+            <a>
+              {" "}
+              <LocalGroceryStoreIcon />
+            </a>
+          </Link>
+          <Link href={profile}>
+            <a>
+              <PersonIcon />
+            </a>
+          </Link>
         </nav>
       </ul>
     </div>
@@ -157,16 +169,26 @@ function Navbar() {
 
         <Hidden mdDown>
           <ul>
-          <Link href={home}><a>Home</a></Link>
-          <a href="">Categories</a>
-          <a href="">Tracking</a>
-          <a href="">Offers</a>
-          <a href="">Blogs</a>
-          <Link href={cart}><a> <LocalGroceryStoreIcon/></a></Link>
-         <Link href={profile}><a>< PersonIcon/></a></Link>
-       
-       
-          
+            <Link href={home}>
+              <a>Home</a>
+            </Link>
+            <Link href={Categories}>
+              <a>Categories</a>
+            </Link>
+            <a href="">Tracking</a>
+            <a href="">Offers</a>
+            <a href="">Blogs</a>
+            <Link href={cart}>
+              <a>
+                {" "}
+                <LocalGroceryStoreIcon />
+              </a>
+            </Link>
+            <Link href={profile}>
+              <a>
+                <PersonIcon />
+              </a>
+            </Link>
           </ul>
         </Hidden>
       </Toolbar>
