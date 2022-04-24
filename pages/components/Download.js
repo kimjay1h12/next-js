@@ -59,7 +59,7 @@ function Location() {
     <div className={classes.root}>
       <Grid container>
         <Grid item>
-          <Typography variant="h3" color="#fff" sx={{ fontWeight: "700" }}>
+          <Typography variant="h3" color="#fff" sx={{ fontWeight: "700" ,marginTop:"50px"}}>
             Order Food
           </Typography>
           <Typography
