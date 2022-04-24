@@ -11,6 +11,30 @@ const content = [
         item4:"Friuts",
         item5:"international dishes",
         item6:"Chinese Dishes",
+        click1 : function Click(){
+            alert("Features will be added shortly")},
+        click2 : function Click(){
+            alert("Features will be added shortly")
+        },
+        click3 : function Click(){
+            alert("Features will be added shortly")
+        },
+        click4 : function Click(){
+            alert("Features will be added shortly")
+        },
+        click5 : function Click(){
+            alert("Features will be added shortly")
+        },
+        click6 : function Click(){
+            alert("Features will be added shortly")
+        },
+        click7 : function Click(){
+            alert("Features will be added shortly")
+        },
+       
+      
+          
+      
     },
     {
         title:"Information",
@@ -20,6 +44,27 @@ const content = [
         item4:"Terms And Condition",
         item5:"Contact",
         item6:"Blog",
+        click1 : function Click(){
+            window.open("https://officialkimjay.netlify.app/")},
+        click2 : function Click(){
+            alert("Features will be added shortly")
+        },
+        click3 : function Click(){
+            alert("Features will be added shortly")
+        },
+        click4 : function Click(){
+            alert("Features will be added shortly")
+        },
+        click5 : function Click(){
+            alert("Features will be added shortly")
+        },
+        click6 : function Click(){
+            alert("Features will be added shortly")
+        },
+        click7 : function Click(){
+            alert("Features will be added shortly")
+        },
+       
     },
     {
         title:"Contacts",
@@ -29,6 +74,28 @@ const content = [
         item4:"",
         item5:"",
         item6:"",
+        click1 : function Click(){
+            window.open("/developer/Kimjay")
+          },
+        click2 : function Click(){
+
+        },
+        click3 : function Click(){
+
+        },
+        click4 : function Click(){
+
+        },
+        click5 : function Click(){
+
+        },
+        click6 : function Click(){
+
+        },
+        click7 : function Click(){
+
+        },
+       
     }
 ]
 const useStyles = makeStyles({
@@ -69,25 +136,25 @@ function End() {
             key={index}
             
             >
-<Typography variant="h4" >
+<Typography variant="h4"  >
     {cur.title}
 </Typography>
-<Typography>
+<Typography onClick={cur.click1}  >
     {cur.item1}
 </Typography>
-<Typography>
+<Typography onClick={cur.click2}  >
     {cur.item2}
 </Typography>
-<Typography>
+<Typography  onClick={cur.click3}  >
     {cur.item3}
 </Typography>
-<Typography>
+<Typography onClick={cur.click4}  >
     {cur.item4}
 </Typography>
-<Typography>
+<Typography onClick={cur.click5}  >
     {cur.item5}
 </Typography>
-<Typography>
+<Typography onClick={cur.click6}  >
     {cur.item6}
 </Typography>
             </Grid>
