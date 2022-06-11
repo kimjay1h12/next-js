@@ -1,4 +1,6 @@
 import { Button, Grid, Typography } from "@mui/material";
+import React,{useContext} from "react";
+import UserContext from "./UserContent";
 import { makeStyles } from "@mui/styles";
 const buider = [
   {
@@ -55,8 +57,10 @@ justifyContent:'space-around',
 });
 function Section() {
   const classes = useStyles();
+  const value = useContext(UserContext)
   return (
     <div className={classes.root}>
+      <h1>{value}</h1>
       {buider.map((cur, index) => (
         <Grid
           container

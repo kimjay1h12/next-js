@@ -4,7 +4,7 @@ import Section from "./components/Section";
 import Head from "next/head";
 import Stores from "./components/Stores";
 import CssBaseline from "@mui/material/CssBaseline";
-
+import {UserContextProvider} from './components/UserContent'
 import Timer from "./components/Timer";
 import Message from "./components/Message";
 
@@ -37,6 +37,7 @@ export default function Home() {
        
       </Head>
       <Mainlayout />
+    
       <AnimationOnScroll animateIn="animate__bounceIn">
       <Header />
       </AnimationOnScroll>
@@ -56,6 +57,7 @@ export default function Home() {
       <AnimationOnScroll animateIn="animate__bounceIn">
       <Download/>
       </AnimationOnScroll>
+  
       <AnimationOnScroll animateIn="animate__bounceIn">
       <End/>
       </AnimationOnScroll>
