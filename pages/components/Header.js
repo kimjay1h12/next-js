@@ -1,5 +1,6 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import Animator from '../components/Animator'
 const img = "/img/background.jpg";
 const img2 = "/img/background2.jpg";
 const useStyles = makeStyles({
@@ -49,6 +50,7 @@ function Header() {
   const classes = useStyles();
   return (
     <div className={classes.root}id="header" >
+      <Animator variant="slide" direction="left" delay={800} timeout={1000}>
       <Grid container  >
         <Grid>
         <Typography variant="h4" color="#f90" className="" >
@@ -60,6 +62,7 @@ function Header() {
         </Grid>
       
       </Grid>
+      </Animator>
     </div>
   );
 }
