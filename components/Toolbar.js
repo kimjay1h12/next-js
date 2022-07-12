@@ -22,7 +22,7 @@ const useStyles = makeStyles({
     borderBottom: "1px solid #ddd",
     transition: "all 0.3s",
     "& .scrolled": {
-      background: "#fff",
+      background: "#e90",
       color: "#333",
       borderBottom: "1px solid #ddd",
     },

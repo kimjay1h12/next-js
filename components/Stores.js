@@ -23,7 +23,7 @@ const useStyles = makeStyles({
       width: "300px",
       height: "400px",
       ["@media (min-width:1200px)"]: {
-        width: "300px",
+        width: "250px",
         height: "500px",
         margin:"40px"
       },
@@ -40,7 +40,7 @@ const useStyles = makeStyles({
       marginRight: "auto",
       display: "block",
       ["@media (min-width:1200px)"]: {
-        width: "300px",
+        width: "3m 00px",
         height: "300px",
       },
     },
