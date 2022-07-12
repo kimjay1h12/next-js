@@ -1,7 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material"
 import Link from "next/link";
-import End from "../components/End";
-import Mainlayout from "../components/Mainlayout";
+import End from "../End";
+import Mainlayout from "../Mainlayout";
 function Cart() {
   return (
     <div style={{marginTop:"250px"}} >
